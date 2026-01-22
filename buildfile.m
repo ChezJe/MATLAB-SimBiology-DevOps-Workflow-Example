@@ -26,7 +26,7 @@ plan("clean") = CleanTask();
 
 % Define dependencies
 plan("compile").Dependencies = "test";
-plan("test").Dependencies = "generateSimFun";
+plan("test").Dependencies = "check";
 plan("generateSimFun").Dependencies = "check";
 
 % Define inputs and outputs
@@ -38,7 +38,7 @@ plan("compile").Inputs = fullfile(proj.RootFolder,"code",["*.mat","*.mlapp","gra
 plan("compile").Outputs = fullfile(proj.RootFolder,"WebAppArchive");
 
 % Set default task
-plan.DefaultTasks = "compile";
+plan.DefaultTasks = "test";
 
 
 end
