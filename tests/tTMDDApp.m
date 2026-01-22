@@ -52,8 +52,9 @@ classdef tTMDDApp < matlab.uitest.TestCase
             testCase.App.AutomaticupdateCheckBox.Value = true;
 
             % Drag slider
-            testCase.drag(testCase.App.DosingAmountSlider,100,200);
-           
+            % testCase.drag(testCase.App.DosingAmountSlider,100,200); % requires display (does not work on github)
+           testCase.App.DosingAmountField.Value = 200;
+
             % Check plot update
             testCase.verifyNotEqual(oldlhRO_XData, testCase.App.ROViewObj.lhRO.XData, "x values for RO not updated");
             testCase.verifyNotEqual(oldlhRO_YData, testCase.App.ROViewObj.lhRO.YData, "y values for RO not updated");
