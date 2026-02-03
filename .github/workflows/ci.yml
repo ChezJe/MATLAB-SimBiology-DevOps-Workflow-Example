@@ -59,6 +59,11 @@ jobs:
         with:
           tasks: compile
 
+      - name: Upload CTF file
+        uses: actions/upload-artifact@v4
+        with:
+          path: WepAppArchive/*
+
       # Configure GitHub Pages to accept your artifact uploads
       - name: Setup Pages
         if: always()
