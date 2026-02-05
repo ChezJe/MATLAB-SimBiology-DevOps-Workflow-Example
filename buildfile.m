@@ -24,10 +24,10 @@ plan("test") = tTaskWithMatlabTest;
 plan("clean") = CleanTask();
 
 % Define dependencies
-plan("compile").Dependencies = "generateMDguide";
+plan("compile").Dependencies = "test";
 plan("test").Dependencies = "generateSimFun";
 plan("generateSimFun").Dependencies = "check";
-plan("generateMDguide").Dependencies = "test";
+plan("check").Dependencies = "generateMDguide";
 
 % Define inputs and outputs
 proj = currentProject;
