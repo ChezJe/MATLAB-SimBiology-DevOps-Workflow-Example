@@ -22,11 +22,10 @@ permissions:
   pages: write
   id-token: write
 
-# Only allow one build of this type to run at a time
-# Ensure results publishing completes without being interrupted/overwritten
+# Avoid the test job to be run before and after auto-merging of dev branch if not up-to-date
 concurrency:
   group: "test"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
 
@@ -125,7 +124,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         if: always()
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
 
       # ==================================== #
