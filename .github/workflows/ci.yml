@@ -110,7 +110,7 @@ jobs:
       # Upload testing and code coverage reports to your repository
       - name: Upload pages
         if: always()
-        uses: actions/upload-pages-artifact@v6
+        uses: actions/upload-pages-artifact@v4
         with:
           path: results # Upload results
 
@@ -125,7 +125,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         if: always()
-        uses: actions/deploy-pages@v6
+        uses: actions/deploy-pages@v4
 
 
       # ==================================== #
