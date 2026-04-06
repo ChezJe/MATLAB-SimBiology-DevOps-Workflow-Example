@@ -1,3 +1,4 @@
+# Example of a CI workflow
 name: MATLAB Build
 
 # Controls when the action will run. 
