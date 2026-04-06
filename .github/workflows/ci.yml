@@ -50,14 +50,14 @@ jobs:
 
       # Set up MATLAB on a GitHub-hosted runner
       - name: Setup MATLAB
-        uses: matlab-actions/setup-matlab@v2
+        uses: matlab-actions/setup-matlab@v3
         with:
           products: ${{ env.PRODUCT_LIST }}
           cache: true
 
       # Run the MATLAB build tool to build and test your code
       - name: Run buildtool
-        uses: matlab-actions/run-build@v2
+        uses: matlab-actions/run-build@v3
         with:
           tasks: test 
 
@@ -89,14 +89,14 @@ jobs:
 
       # Set up MATLAB on a GitHub-hosted runner
       - name: Setup MATLAB
-        uses: matlab-actions/setup-matlab@v2
+        uses: matlab-actions/setup-matlab@v3
         with:
           products: ${{ env.PRODUCT_LIST }}
           cache: true
 
       # Run the MATLAB build tool to build and test your code
       - name: Run buildtool
-        uses: matlab-actions/run-build@v2
+        uses: matlab-actions/run-build@v3
         with:
           tasks: compile  # change to compile
 
