@@ -25,15 +25,6 @@
                 <Info Name="Test" ReadOnly="READ_ONLY"/>
             </Label>
         </Category>
-        <Category Location="Deployment_Category_225f1cc5-de2f-41d0-8ae7-7b46a5285c28">
-            <Info DataType="None" Name="Web App - WebAppArchive1" ReadOnly="0" SingleValued="0"/>
-            <Label Location="Deployment_AdditionalFiles_225f1cc5-de2f-41d0-8ae7-7b46a5285c28">
-                <Info Name="Additional File" ReadOnly="WRITABLE"/>
-            </Label>
-            <Label Location="Deployment_MainFile_225f1cc5-de2f-41d0-8ae7-7b46a5285c28">
-                <Info Name="Main Function" ReadOnly="WRITABLE"/>
-            </Label>
-        </Category>
     </Categories>
     <Files Location="Root">
         <File Location="buildfile.m">
@@ -608,10 +599,4 @@
             </Info>
         </EntryPoint>
     </EntryPoints>
-    <Files Location="MathWorksDeploymentConfigs">
-        <DIR_SIGNIFIER Location="1">
-            <Info/>
-        </DIR_SIGNIFIER>
-        <Info configMapData="{}"/>
-    </Files>
 </project>

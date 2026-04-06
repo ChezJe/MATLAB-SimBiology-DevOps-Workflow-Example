@@ -44,7 +44,6 @@ jobs:
         with:
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
-
       # Start display server (for UI tests in Linux)
       - name: Start display server
         run: |
