@@ -40,8 +40,6 @@ jobs:
 
       # Check out your repository
       - uses: actions/checkout@v5
-        with:
-          ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
       # Start display server (for UI tests in Linux)
       - name: Start display server
