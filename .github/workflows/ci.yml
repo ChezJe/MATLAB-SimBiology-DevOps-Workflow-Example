@@ -73,7 +73,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -81,11 +81,11 @@ jobs:
       # Check out your repository
       - uses: actions/checkout@v5
       
-      # Start display server (for UI tests in Linux)
-      - name: Start display server
-        run: |
-          Xvfb :99 & 
-          echo "DISPLAY=:99" >> $GITHUB_ENV
+      # # Start display server (for UI tests in Linux)
+      # - name: Start display server
+      #   run: |
+      #     Xvfb :99 & 
+      #     echo "DISPLAY=:99" >> $GITHUB_ENV
 
       # Set up MATLAB on a GitHub-hosted runner
       - name: Setup MATLAB
