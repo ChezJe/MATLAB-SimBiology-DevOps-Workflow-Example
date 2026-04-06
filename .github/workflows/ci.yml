@@ -44,7 +44,6 @@ jobs:
         with:
           ref: refs/pull/${{ github.event.pull_request.number }}/merge
 
-
       # Start display server (for UI tests in Linux)
       - name: Start display server
         run: |
@@ -76,7 +75,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -84,11 +83,11 @@ jobs:
       # Check out your repository
       - uses: actions/checkout@v5
       
-      # # Start display server (for UI tests in Linux)
-      # - name: Start display server
-      #   run: |
-      #     Xvfb :99 & 
-      #     echo "DISPLAY=:99" >> $GITHUB_ENV
+      # Start display server (for UI tests in Linux)
+      - name: Start display server
+        run: |
+          Xvfb :99 & 
+          echo "DISPLAY=:99" >> $GITHUB_ENV
 
       # Set up MATLAB on a GitHub-hosted runner
       - name: Setup MATLAB
@@ -106,12 +105,12 @@ jobs:
       # Configure GitHub Pages to accept your artifact uploads
       - name: Setup Pages
         if: always()
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       # Upload testing and code coverage reports to your repository
       - name: Upload pages
         if: always()
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v6
         with:
           path: results # Upload results
 
@@ -126,7 +125,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         if: always()
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v6
 
 
       # ==================================== #
@@ -135,12 +134,12 @@ jobs:
 
       ## Runs your tests using `runtests` command
       #- name: Run all tests
-      #  uses: matlab-actions/run-tests@v2
+      #  uses: matlab-actions/run-tests@v3
       #  with:
       #    source-folder: code
 
       ## Executes custom MATLAB scripts, functions, or statements
       #- name: Run custom testing procedure
-      #  uses: matlab-actions/run-command@v2
+      #  uses: matlab-actions/run-command@v3
       #  with:
       #    command: disp('Running my custom testing procedure!'); addpath('code'); results = runtests('IncludeSubfolders', true); assertSuccess(results);
