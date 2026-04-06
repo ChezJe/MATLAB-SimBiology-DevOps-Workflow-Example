@@ -8,7 +8,6 @@ on:
   
   pull_request:
     branches: [ main ]
-    types: [ synchronize ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -42,6 +41,9 @@ jobs:
 
       # Check out your repository
       - uses: actions/checkout@v5
+        with:
+          ref: refs/pull/${{ github.event.pull_request.number }}/merg
+
 
       # Start display server (for UI tests in Linux)
       - name: Start display server
