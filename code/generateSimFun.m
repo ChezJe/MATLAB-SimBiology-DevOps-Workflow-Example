@@ -32,7 +32,7 @@ doseTable = doseObj.getTable();
 
 % Create a simulation function 
 simFun = modelObj.createSimFunction({'kel','kon','kdeg'}, ...
-    {'Drug','Receptor','Complex','RO'}, doseObj.TargetName, basevariantObj);
+    {'Plasma.Drug','Receptor','Complex','RO'}, doseObj.TargetName, basevariantObj);
 
 % Compile the simulation function for faster execution
 simFun.accelerate();
