@@ -17,6 +17,7 @@ In this workshop, you will:
 ## Table of Contents
 &#8195;[Workshop Requirements](#H_34C2FB57)
  
+<<<<<<< HEAD
 &#8195;[Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing](#TMP_59e6)
  
 &#8195;[Part 2:  Generating your first tests](#TMP_02c5)
@@ -30,6 +31,21 @@ In this workshop, you will:
 &#8195;[Part 6:  Compile the App in the CI workflow and download the artifact](#TMP_8913)
  
 &#8195;[Workshop wrap\-up and additional information](#TMP_6893)
+=======
+&#8195;[Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing](#TMP_13b6)
+ 
+&#8195;[Part 2:  Generating your first tests](#TMP_2e3d)
+ 
+&#8195;[Part 3:  Finding existing tests and measuring coverage](#TMP_1705)
+ 
+&#8195;[Part 4:  Updating badges, committing our changes, and pushing to GitHub](#TMP_6bc5)
+ 
+&#8195;[Part 5:  Create a pull request, watch GitHub Actions automatically test your changes and publish results](#TMP_179e)
+ 
+&#8195;[Part 6:  Compile the App in the CI workflow and download the artifact](#TMP_7706)
+ 
+&#8195;[Workshop wrap\-up and additional information](#TMP_5ff9)
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
  
 <!-- End Toc -->
 
@@ -54,7 +70,11 @@ The following steps cover all of the things you will need to successfully comple
 - The workshop leverages the free repository and CI capabilities offered by GitHub and GitHub Actions
 - Go to:  [https://github.com/signup](https://github.com/signup)
 
+<<<<<<< HEAD
 <a id="TMP_59e6"></a>
+=======
+<a id="TMP_13b6"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 1:  Getting the workshop files and configuring GitHub for automated testing and results publishing
 
@@ -234,7 +254,11 @@ Click on the 'Run App' shortcut to start the app in MATLAB:
 
 ![image_20.png](WorkshopGuide_media/image_20.png)
 
+<<<<<<< HEAD
 <a id="TMP_02c5"></a>
+=======
+<a id="TMP_2e3d"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 2:  Generating your first tests
 
@@ -391,7 +415,11 @@ Congratulations! You just created multiple tests for your MATLAB code!
 
 It was easier than you thought, right?
 
+<<<<<<< HEAD
 <a id="TMP_885c"></a>
+=======
+<a id="TMP_1705"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 3:  Finding existing tests and measuring coverage
 
@@ -631,7 +659,11 @@ It looks like we've achieved full statement coverage for [`generateSimFun`](./co
 
 ![image_65.png](WorkshopGuide_media/image_65.png)
 
+<<<<<<< HEAD
 <a id="TMP_0713"></a>
+=======
+<a id="TMP_6bc5"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 4:  Updating badges, committing our changes, and pushing to GitHub
 
@@ -780,7 +812,11 @@ At this point, all of your changes will be pushed to GitHub.
 
 ![image_85.png](WorkshopGuide_media/image_85.png)
 
+<<<<<<< HEAD
 <a id="TMP_0a39"></a>
+=======
+<a id="TMP_179e"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 5:  Create a pull request, watch GitHub Actions automatically test your changes and publish results
 
@@ -890,7 +926,11 @@ The code coverage report looks like this:
 
 Now anyone that visits your repository can immediately see the quality of your code, explore your test and code coverage results, and will have more confidence in the code you are writing!
 
+<<<<<<< HEAD
 <a id="TMP_8913"></a>
+=======
+<a id="TMP_7706"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Part 6:  Compile the App in the CI workflow and download the artifact
 
@@ -969,7 +1009,11 @@ Once the `Deploy/ Release (main)` job is done, a new artifact is available at th
 
 You can now download the CTF file and upload it to your Web App Server!
 
+<<<<<<< HEAD
 <a id="TMP_6893"></a>
+=======
+<a id="TMP_5ff9"></a>
+>>>>>>> 6bec994c233dc2e1d162f07833d107a881e2a295
 
 # Workshop wrap\-up and additional information
 
