@@ -44,6 +44,7 @@ plan.DefaultTasks = "test";
 end
 
 function generateMDguideTask(~)
+    % Export workshop guide to Markdown
     proj = currentProject;
 
     export("WorkshopGuide.m",fullfile(proj.RootFolder,"WorkshopGuide.md"));
